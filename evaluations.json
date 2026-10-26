@@ -1,0 +1,11 @@
+[
+  {
+    "id": "stem_eval_001",
+    "domain": "Physics / Mechanics",
+    "prompt": "Calculate the magnitude of the gravitational force between two 50kg masses separated by a distance of 2 meters. Express the final answer in LaTeX.",
+    "response_a": "The gravitational force is given by $F = G \\frac{m_1 m_2}{r^2}$. Substituting the values: $F = (6.674 \\times 10^{-11}) \\frac{(50)(50)}{2^2} = (6.674 \\times 10^{-11}) \\frac{2500}{4} = 4.171 \\times 10^{-8} \\text{ N}$.",
+    "response_b": "Using Newton's law of gravitation, $F = G \\frac{m_1 m_2}{r}$. With $m_1 = 50$, $m_2 = 50$, and $r = 2$, we get $F = 6.674 \\times 10^{-11} \\times \\frac{2500}{2} = 8.3425 \\times 10^{-8} \\text{ N}$.",
+    "preferred_response": "response_a",
+    "justification": "Response A correctly applies the inverse-square law $F = G \\frac{m_1 m_2}{r^2}$ and accurate LaTeX syntax. Response B commits a critical physics hallucination by omitting the square on the distance variable in the denominator ($r$ instead of $r^2$), leading to an incorrect force calculation."
+  }
+]
